@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            position: absolute;
+            top: 50%;
+            margin-top: -100px;
+            left: 50%;
+            margin-left: -200px;
+            width: 400px;
+            height: 200px;
+            background-color: #ccc;
+            overflow: hidden;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #fc0;
+            border-radius: 50px;
+        }
+
+        .left-top {
+            position: relative;
+            top: -50px;
+            left: -50px;
+        }
+
+        .right-bottom {
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2 left-top"></div>
+        <div class="box2 right-bottom"></div>
+    </div>
+</body>
+
+</html>
